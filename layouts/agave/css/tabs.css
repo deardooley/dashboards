@@ -1,0 +1,150 @@
+/* custom inclusion of right, left and below tabs */
+
+.tabpanel {
+  margin-top: 25px;
+}
+/*.stats-type-tabs {
+display: inline-block;
+}*/
+.tab-pane .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.nav-pills {
+  border-radius: 0 0;
+  -webkit-border-radius: 0 0;
+  -moz-border-radius: 0 0;
+  text-align: center;
+}
+.nav-pills>li {
+  margin-top: 0;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+  /*background-color: #04a5B7;*/
+  background-color: #ddd;
+  color:#04a5B7;
+}
+.nav>li>a:hover, .nav>li>a:focus, .nav-pills>li>a:hover {
+  color: #ddd;
+  color:#04a5B7;
+}
+.nav-pills>li>a {
+  /* border-radius: 13px; */
+  border-radius: 0px;
+  padding: 25px;
+  background-color: #ddd;
+  font-size: 2em;
+
+}
+
+.chart-stage .nav-tabs {
+  padding-top: 10px;
+  padding-left: 10px; }
+  .chart-stage .tab-content {
+    margin-left: -45px; }
+
+    .chart-stage .tabs-below > .nav-tabs,
+    .chart-stage .tabs-right > .nav-tabs,
+    .chart-stage .tabs-left > .nav-tabs {
+      border-bottom: 0;
+    }
+
+    .chart-stage .tab-content > .tab-pane,
+    .chart-stage .pill-content > .pill-pane {
+      display: none;
+    }
+
+    .chart-stage .tab-content > .active,
+    .chart-stage .pill-content > .active {
+      display: block;
+    }
+
+    .chart-stage .tabs-below > .nav-tabs {
+      border-top: 1px solid #ddd;
+    }
+
+    .chart-stage .tabs-below > .nav-tabs > li {
+      margin-top: -1px;
+      margin-bottom: 0;
+    }
+
+    .chart-stage .tabs-below > .nav-tabs > li > a {
+      -webkit-border-radius: 0 0 4px 4px;
+      -moz-border-radius: 0 0 4px 4px;
+      border-radius: 0 0 4px 4px;
+    }
+
+    .chart-stage .tabs-below > .nav-tabs > li > a:hover,
+    .chart-stage .tabs-below > .nav-tabs > li > a:focus {
+      border-top-color: #ddd;
+      border-bottom-color: transparent;
+    }
+
+    .chart-stage .tabs-below > .nav-tabs > .active > a,
+    .chart-stage .tabs-below > .nav-tabs > .active > a:hover,
+    .chart-stage .tabs-below > .nav-tabs > .active > a:focus {
+      border-color: transparent #ddd #ddd #ddd;
+    }
+
+    .chart-stage .tabs-left > .nav-tabs > li,
+    .chart-stage .tabs-right > .nav-tabs > li {
+      float: none;
+    }
+
+    .chart-stage .tabs-left > .nav-tabs > li > a,
+    .chart-stage .tabs-right > .nav-tabs > li > a {
+      min-width: 74px;
+      margin-right: 0;
+      margin-bottom: 3px;
+    }
+
+    .chart-stage .tabs-left > .nav-tabs {
+      float: left;
+      margin-right: 19px;
+      border-right: 1px solid #ddd;
+    }
+
+    .chart-stage .tabs-left > .nav-tabs > li > a {
+      margin-right: -1px;
+      -webkit-border-radius: 4px 0 0 4px;
+      -moz-border-radius: 4px 0 0 4px;
+      border-radius: 4px 0 0 4px;
+    }
+
+    .chart-stage .tabs-left > .nav-tabs > li > a:hover,
+    .chart-stage .tabs-left > .nav-tabs > li > a:focus {
+      border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+    }
+
+    .chart-stage .tabs-left > .nav-tabs .active > a,
+    .chart-stage .tabs-left > .nav-tabs .active > a:hover,
+    .chart-stage .tabs-left > .nav-tabs .active > a:focus {
+      border-color: #ddd transparent #ddd #ddd;
+      *border-right-color: #ffffff;
+    }
+
+    .chart-stage .tabs-right > .nav-tabs {
+      float: right;
+      margin-left: 19px;
+      border-left: 1px solid #ddd;
+    }
+
+    .chart-stage .tabs-right > .nav-tabs > li > a {
+      margin-left: -1px;
+      -webkit-border-radius: 0 4px 4px 0;
+      -moz-border-radius: 0 4px 4px 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .chart-stage .tabs-right > .nav-tabs > li > a:hover,
+    .chart-stage .tabs-right > .nav-tabs > li > a:focus {
+      border-color: #eeeeee #eeeeee #eeeeee #dddddd;
+    }
+
+    .chart-stage .tabs-right > .nav-tabs .active > a,
+    .chart-stage .tabs-right > .nav-tabs .active > a:hover,
+    .chart-stage .tabs-right > .nav-tabs .active > a:focus {
+      border-color: #ddd #ddd #ddd transparent;
+      *border-left-color: #ffffff;
+    }

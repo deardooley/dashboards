@@ -1,0 +1,170 @@
+body.application {
+  padding:0;
+  background: #FFF;
+  font: 14px/1.5 Arial, 'Liberation Sans', FreeSans, sans-serif;
+  color: #656565;
+}
+a {
+  font: 14px/1.5 Arial, 'Liberation Sans', FreeSans, sans-serif;
+  text-decoration: none;
+  color: #656565;
+}
+a[data-toggle="popover"] {
+  float: right;
+}
+body.application > .container-fluid.wrapper {
+  padding: 40px 20px 0;
+  border-top: 8px solid #ddd;
+}
+.chart-wrapper {
+  border-color: #656565;
+  border-radius: 0 0;
+  -webkit-border-radius: 0 0;
+  -moz-border-radius: 0 0;
+}
+.chart-wrapper .chart-title {
+  border-bottom-color: #656565;
+  font-size: 16px;
+  font-weight: 400;
+  color: #656565;
+}
+.chart-title, .chart-title a {
+  color: #656565;
+  text-decoration: none;
+}
+
+.chart-title a:hover {
+  color:#04a5B7;
+}
+.panel.badge {
+  background: #FFF;
+  color:#656565;
+  width: 100%;
+  border-color: #656565;
+  border-radius: 0 0;
+  -webkit-border-radius: 0 0;
+  -moz-border-radius: 0 0;
+}
+.panel.badge:hover {
+  background: #33485c;
+  color: #fff;
+}
+
+.panel.badge h4 {
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+.panel.badge h4 span.units {
+  font-size: .8em;
+}
+.panel.badge p.description {
+  width: 100%;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.panel.badge h4 .icon, .panel.badge p.description {
+  color:#04a5B7;
+}
+.panel.badge:hover h4 .icon, .panel.badge:hover h4 span, .panel.badge:hover p.description {
+  color:#FFF;
+}
+
+#navigation {
+  background: #000;
+  margin-top: 0;
+  border-bottom: 1px solid #FFF;
+  position: relative;
+  height: 70px;
+  width: 100%;
+  z-index: 99999;
+  text-align: center;
+}
+
+#main-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+#main-navigation li:first-child {
+  /* color: transparent; */
+  background: transparent url('http://preview.agaveapi.co/wp-content/themes/agave/images/logo-white-sm.png') 0px 50% no-repeat;
+  padding-left: 215px;
+}
+#main-navigation li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  margin-right: 35px;
+}
+#main-navigation li.current-menu-item a,
+#main-navigation li.current-menu-item a:hover {
+  color: #f9f9f9;
+}
+#main-navigation li a {
+  text-decoration: none;
+  color: #f9f9f9;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 16px;
+  display: block;
+  padding: 0 25px 0 5px;
+  font-weight: bold;
+}
+.hidden-desktop {
+  display: none!important;
+}
+#main-menu-select {
+  margin-top: 18px;
+}
+
+.elevated {
+  position: relative;
+  z-index: 1;
+}
+
+footer {
+  padding: 25px 0;
+  background: #2c3237;
+  color: #fff;
+  text-shadow: 1px 1px rgba(0,0,0,.25);
+  position: relative;
+  margin-top: 25px;
+}
+
+footer a {
+  color: #FFF;
+}
+.texture {
+  background: url(http://preview.agaveapi.co/wp-content/themes/agave/images/textures/stripes.png) repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 0;
+}
+
+.spinner {
+  display: inline-block;
+  max-width: 50px;
+
+  -webkit-transition: opacity 0.25s, max-width 0.45s;
+  -moz-transition: opacity 0.25s, max-width 0.45s;
+  -o-transition: opacity 0.25s, max-width 0.45s;
+  transition: opacity 0.25s, max-width 0.45s; /* Duration fixed since we animate additional hidden width */
+}
+
+.has-spinner.active {
+  cursor:progress;
+}
+
+.has-spinner.active .spinner {
+  opacity: 1;
+  max-width: 50px; /* More than it will ever come, notice that this affects on animation duration */
+}

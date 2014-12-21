@@ -8,7 +8,8 @@ Begin with a layout:
 
 Add charts to each `chart-stage` HTML element:
 
-``` html
+~~~ 
+
 <div class="col-sm-6 col-md-3">
   <div class="chart-wrapper">
     <div class="chart-title">
@@ -24,7 +25,8 @@ Add charts to each `chart-stage` HTML element:
     </div>
   </div>
 </div>
-```
+
+~~~
 
 And voilà!
 

@@ -1,0 +1,7 @@
+/* begin knob styling */
+.chart-stage .knob-title {
+  border-bottom: medium none;
+  font-size: 18px;
+  text-align: center;
+}
+/* end knob styling */
