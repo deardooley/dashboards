@@ -2,13 +2,15 @@
 <html>
 <head>
   <title>Layouts &raquo; Split-Columns</title>
-  <link rel="stylesheet" href="../../assets/lib/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../../assets/css/keen-dashboards.css">
+  <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="vendors/iconmoon/css/iconmoon.css">
+  <link rel="stylesheet" href="css/keen-dashboards.css">
   <link rel="stylesheet" href="css/agave.css">
   <link rel="stylesheet" href="css/tabs.css">
   <link rel="stylesheet" href="css/charts.css">
-  <link rel="stylesheet" href="vendors/iconmoon/css/iconmoon.css">
+  <!-- <link rel="stylesheet" href="http://i.icomoon.io/public/temp/d8f87ad800/agaveapico/style.css"> -->
+  <!-- <link rel="stylesheet" href="css/fonts.css"> -->
 </head>
 <body class="application">
 
@@ -18,7 +20,7 @@
         <div class="span12">
           <nav>
             <ul id="main-navigation" class="hidden-phone hidden-tablet">
-              <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-1793"><a href="/">Home</a></li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1793"><a href="/">Home</a></li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-299"><a href="http://preview.agaveapi.co/about/">About</a></li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1148"><a href="http://preview.agaveapi.co/documentation/">Documentation</a></li>
               <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1147"><a href="http://status.agaveapi.co">Status</a></li>
@@ -37,29 +39,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="../">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="navbar-brand" href="./">Layouts &raquo; Split Columns</a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-left">
-          <li><a href="https://keen.io">Home</a></li>
-          <li><a href="https://keen.io/team">Team</a></li>
-          <li><a href="https://github.com/keenlabs/dashboards/tree/gh-pages/layouts/split-columns">Source</a></li>
-          <li><a href="https://groups.google.com/forum/#!forum/keen-io-devs">Community</a></li><li><a href="http://stackoverflow.com/questions/tagged/keen-io?sort=newest&pageSize=15">Technical Support</a></li>
-        </ul>
-      </div>
-    </div> -->
   </div>
 
   <div class="container-fluid wrapper">
@@ -68,7 +47,7 @@
       <div class="col-sm-6 col-md-3">
         <div class="panel badge">
           <div class="panel-body">
-            <h4 class="value"><i class="icon fa im-job"></i> <span id="summary-jobs">127</span></h4>
+            <h4 class="value"><i class="icon fa im-hardhat2"></i> <span id="summary-jobs">127</span></h4>
             <p class="description">Active Jobs</p>
           </div>
         </div>
@@ -103,18 +82,41 @@
       <div id="stat-sidebar" class="col-sm-2 col-md-2">
         <div class="tabpanel" role="tabpanel">
           <ul id="stat-tabs" class="nav nav-pills stats-type-tabs nav-stacked" role="tablist">
-              <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab"><i class="icon fa fa-exchange"></i></a></li>
+              <li role="presentation" class="active"><a href="#world" aria-controls="world" role="tab" data-toggle="tab"><i class="icon fa fa-globe"></i></a></li>
+              <li role="presentation"><a href="#traffic" aria-controls="traffic" role="tab" data-toggle="tab"><i class="icon fa fa-line-chart"></i></a></li>
+              <li role="presentation"><a href="#data" aria-controls="data" role="tab" data-toggle="tab"><i class="icon fa fa-exchange"></i></a></li>
+              <li role="presentation"><a href="#jobs" aria-controls="jobs" role="tab" data-toggle="tab"><i class="icon im-hardhat2"></i></a></li>
               <li role="presentation"><a href="#apps" aria-controls="apps" role="tab" data-toggle="tab"><i class="icon fa fa-th"></i></a></li>
               <li role="presentation"><a href="#clients" aria-controls="clients" role="tab" data-toggle="tab"><i class="icon fa fa-puzzle-piece"></i></a></li>
-              <li role="presentation"><a href="#jobs" aria-controls="jobs" role="tab" data-toggle="tab"><i class="icon im-job"></i></a></li>
-              <li role="presentation"><a href="#traffic" aria-controls="traffic" role="tab" data-toggle="tab"><i class="icon fa fa-car"></i></a></li>
               <li role="presentation"><a href="#code" aria-controls="code" role="tab" data-toggle="tab"><i class="icon fa fa-code"></i></a></li>
               <li role="presentation"><a href="#operations" aria-controls="operations" role="tab" data-toggle="tab"><i class="icon fa fa-cogs"></i></a></li>
             </ul>
           </div>
         </div>
       <div class="tab-content col-sm-10 col-md-10">
-        <div role="tabpanel" class="tab-pane active" id="data">
+
+        <div role="tabpanel" class="tab-pane active" id="world">
+          <!-- begin world section  -->
+          <div class="row">
+            <div class="col-sm-12 col-md-12"><h2>Worldwide usage</h2></div>
+            <div class="col-sm-12 col-md-12">
+              <div class="chart-wrapper">
+                <div class="chart-title">
+                  Worldwide platform usage
+                  <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="Total data momement, including retried transfers, is shown by protocol over time.">
+                    <i class="icon fa fa-info"></i>
+                  </a>
+                </div>
+                <div class="chart-stage">
+                  <img data-src="data.info/100%x600/white" data-type="map" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end world section -->
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="data">
           <!-- begin data section -->
           <div class="row">
             <div class="col-sm-12 col-md-12"><h2>Data</h2></div>
@@ -123,7 +125,7 @@
                 <div class="chart-title">
                   Data movement by protocol
                   <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="Total data momement, including retried transfers, is shown by protocol over time.">
-                    <i class="icon fa fa-question-circle fa-lg"></i>
+                    <i class="icon fa fa-info"></i>
                   </a>
                 </div>
                 <div class="chart-stage">
@@ -136,7 +138,7 @@
                 <div class="chart-title">
                   Data protocol usage by percentage
                   <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="Data movement by protocol is shown as a percentage of total data moved.">
-                    <i class="icon fa fa-question-circle fa-lg"></i>
+                    <i class="icon fa fa-info"></i>
                   </a>
                 </div>
                 <div class="chart-stage">
@@ -193,7 +195,7 @@
                 <div class="chart-title">
                   Top apps
                   <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="Top apps used across all Agave tenants">
-                    <i class="icon fa fa-question-circle fa-lg"></i>
+                    <i class="icon fa fa-info"></i>
                   </a>
                 </div>
                 <div class="chart-stage">
@@ -206,7 +208,7 @@
                 <div class="chart-title">
                   Registered apps over time
                   <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="The total apps over time is the number of active apps registered for use in Agave.">
-                    <i class="icon fa fa-question-circle fa-lg"></i>
+                    <i class="icon fa fa-info"></i>
                   </a>
                 </div>
                 <div class="chart-stage">
@@ -262,8 +264,8 @@
               <div class="chart-wrapper">
                 <div class="chart-title">
                   Total registered client apps
-                  <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="The number of clients registered over time includes all client applications generating new Agave API keys. Regeneration of existing keys is not included.">
-                    <i class="icon fa fa-question-circle fa-lg"></i>
+                  <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="The number of active 3rd party clients">
+                    <i class="icon fa fa-info"></i>
                   </a>
                 </div>
                 <div class="chart-stage">
@@ -274,9 +276,9 @@
             <div class="col-sm-8 col-md-8">
               <div class="chart-wrapper">
                 <div class="chart-title">
-                  Client application registrations
-                  <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="The percentage of total clients within each tenant">
-                    <i class="icon fa fa-question-circle fa-lg"></i>
+                  Monthly 3rd party applications registrations
+                  <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="The number of clients registered over time includes all client applications generating new Agave API keys. Regeneration of existing keys is not included.">
+                    <i class="icon fa fa-info"></i>
                   </a>
                 </div>
                 <div class="chart-stage">
@@ -297,7 +299,7 @@
                 <div class="chart-title">
                   Job submission by country
                   <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="Job distribution by country. This heat map reflects the quantity of jobs submitted by geographic location. Location is resolved by geolocating ip addresses.">
-                    <i class="icon fa fa-question-circle fa-lg"></i>
+                    <i class="icon fa fa-info"></i>
                   </a>
                 </div>
                 <div class="chart-stage">
@@ -310,7 +312,7 @@
                 <div class="chart-title">
                   Monthly job activity
                   <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="Monthly job activity represents the number of jobs which began running during the given period.">
-                    <i class="icon fa fa-question-circle fa-lg"></i>
+                    <i class="icon fa fa-info"></i>
                   </a>
                 </div>
                 <div class="chart-stage">
@@ -324,7 +326,7 @@
             <div class="col-sm-6 col-md-3">
               <div class="panel badge">
                 <div class="panel-body">
-                  <h4 class="value"><i class="icon fa im-job"></i> <span id="jobs-total">1389</span></h4>
+                  <h4 class="value"><i class="icon fa im-hardhat2"></i> <span id="jobs-total">1389</span></h4>
                   <p class="description">Jobs run</p>
                 </div>
               </div>
@@ -362,112 +364,99 @@
           <!-- begin traffic section -->
           <div class="row">
             <div class="col-sm-12 col-md-12"><h2>Traffic</h2></div>
+            <div class="col-sm-12 col-md-12">
+              <div class="chart-wrapper">
+                <div class="chart-title">
+                  Monthly traffic
+                  <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="Top client applications across all tenants by cumulative usage.">
+                    <i class="icon fa fa-info"></i>
+                  </a>
+                </div>
+                <div class="chart-stage">
+                  <img data-src="traffic.info/100%x240/white" data-type="line" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
             <div class="col-sm-4 col-md-4">
               <div class="chart-wrapper">
                 <div class="chart-title">
                   Daily requests
+                  <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="Average daily requests across all tenants.">
+                    <i class="icon fa fa-info"></i>
+                  </a>
                 </div>
                 <div class="chart-stage">
                   <img data-src="traffic.info/100%x240/white" data-type="knob" >
                 </div>
               </div>
             </div>
-
-            <div class="col-sm-8 col-md-8">
-              <div class="chart-wrapper">
-                <div class="chart-title">
-                  Top third-party applications
-                  <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="Top client applications across all tenants by cumulative usage.">
-                    <i class="icon fa fa-question-circle fa-lg"></i>
-                  </a>
-                </div>
-                <div class="chart-stage">
-                  <div class="row">
-                    <div class="col-xs-3">
-                      <div class="tabbable tabs-left">
-                        <ul class="nav nav-tabs">
-                          <li class="active"><a href="#usage-clients-requests" data-toggle="tab">Requests</a></li>
-                          <li><a href="#usage-clients-data" data-toggle="tab">Data</a></li>
-                          <li><a href="#usage-clients-jobs" data-toggle="tab">Jobs</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-xs-9">
-                      <div class="tab-content">
-                        <div class="tab-pane active" id="usage-clients-requests">
-                          <img data-src="usage-clients-requests.info/100%x240/white" data-type="bar" >
-                        </div>
-                        <div class="tab-pane" id="usage-clients-data">
-                          <img data-src="usage-clients-data.info/100%x240/white" data-type="bar" >
-                        </div>
-                        <div class="tab-pane" id="usage-clients-jobs">
-                          <img data-src="usage-clients-jobs.info/100%x240/white" data-type="bar" >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- begin traffic badges -->
-          <div id="sum_box" class="row mbl">
-            <div class="col-sm-6 col-md-6">
-              <div class="panel badge">
-                <div class="panel-body">
-                  <h4 class="value"><i class="icon fa fa-car"></i> <span id="traffic-daily">57</span><span class="units">K</span></h4>
-                  <p class="description">Daily requests</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-6">
-              <div class="panel badge">
-                <div class="panel-body">
-                  <h4 class="value"><i class="icon fa fa-group"></i> <span id="traffic-users">579</span></h4>
-                  <p class="description">Daily users</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12 col-md-12">
-              <div class="chart-wrapper">
-                <div class="chart-title">
-                  Monthly traffic
-                  <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="Top client applications across all tenants by cumulative usage.">
-                    <i class="icon fa fa-question-circle fa-lg"></i>
-                  </a>
-                </div>
-                <div class="chart-stage">
-                  <img data-src="usage-clients-requests.info/100%x240/white" data-type="line" >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12 col-md-9">
-              <div class="chart-wrapper">
-                <div class="chart-title">
-                  Global traffic
-                  <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="Top client applications across all tenants by cumulative usage.">
-                    <i class="icon fa fa-question-circle fa-lg"></i>
-                  </a>
-                </div>
-                <div class="chart-stage">
-                  <img data-src="usage-clients-requests.info/100%x240/white" data-type="line" >
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-3">
+            <div class="col-sm-4 col-md-4">
               <div class="chart-wrapper">
                 <div class="chart-title">
                   Top countries
-                  <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="Top client applications across all tenants by cumulative usage.">
-                    <i class="icon fa fa-question-circle fa-lg"></i>
+                  <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="Average unique client applications accessing the platform on any given month.">
+                    <i class="icon fa fa-info"></i>
                   </a>
                 </div>
                 <div class="chart-stage">
-                  <img data-src="usage-clients-requests.info/100%x240/white" data-type="line" >
+                  <img data-src="traffic.info/100%x240/white" data-type="knob" >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <div class="chart-wrapper">
+                <div class="chart-title">
+                  Monthly users
+                  <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="Average number of unique users accessing the platform on any given month.">
+                    <i class="icon fa fa-info"></i>
+                  </a>
+                </div>
+                <div class="chart-stage">
+                  <img data-src="traffic.info/100%x240/white" data-type="knob" >
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-md-4">
+              <div class="chart-wrapper">
+                <div class="chart-title">
+                  Top data clients
+                  <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="Top clients by data usage.">
+                    <i class="icon fa fa-info"></i>
+                  </a>
+                </div>
+                <div class="chart-stage">
+                  <img data-src="traffic.info/100%x240/white" data-type="bar" >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <div class="chart-wrapper">
+                <div class="chart-title">
+                  Top compute clients
+                  <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="Top clients by computational usage.">
+                    <i class="icon fa fa-info"></i>
+                  </a>
+                </div>
+                <div class="chart-stage">
+                  <img data-src="traffic.info/100%x240/white" data-type="bar" >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <div class="chart-wrapper">
+                <div class="chart-title">
+                  Top access clients
+                  <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="Top clients by overall requests.">
+                    <i class="icon fa fa-info"></i>
+                  </a>
+                </div>
+                <div class="chart-stage">
+                  <img data-src="traffic.info/100%x240/white" data-type="bar" >
                 </div>
               </div>
             </div>
@@ -506,7 +495,7 @@
             <div class="col-sm-6 col-md-3">
               <div class="panel badge">
                 <div class="panel-body">
-                  <h4 class="value"><i id="git-buildstatus-icon" class="icon fa "></i> <span id="git-buildstatus">up</span><span class="units">%</span></h4>
+                  <h4 class="value"><i id="git-buildstatus-icon" class="icon fa "></i> <span id="git-buildstatus">up</span></h4>
                   <p class="description">Build Status</p>
                 </div>
               </div>
@@ -524,7 +513,7 @@
                 <div class="chart-title">
                   Overall platform uptime
                   <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="Top client applications across all tenants by cumulative usage.">
-                    <i class="icon fa fa-question-circle fa-lg"></i>
+                    <i class="icon fa fa-info"></i>
                   </a>
                 </div>
                 <div class="chart-stage">
@@ -538,7 +527,7 @@
                 <div class="chart-title">
                   Platform uptime by service
                   <a href="#" tabindex="0" role="button" data-toggle="popover" data-content="Top client applications across all tenants by cumulative usage.">
-                    <i class="icon fa fa-question-circle fa-lg"></i>
+                    <i class="icon fa fa-info"></i>
                   </a>
                 </div>
                 <div class="chart-stage">
@@ -615,17 +604,16 @@
     <div class="clear"></div>
   </footer>
 
-  <script src="../../assets/lib/jquery/dist/jquery.min.js"></script>
-  <script src="../../assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="vendors/jquery/dist/jquery.min.js"></script>
+  <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
-  <script src="../../assets/lib/holderjs/holder.js"></script>
+  <script src="vendors/holderjs/holder.js"></script>
   <script>
     Holder.add_theme("white", { background:"#fff", foreground:"#a7a7a7", size:10 });
     Holder.invisible_error_fn = function(fn){
       return function(el){
         if(el.hasAttribute("data-holder-invisible")){
-          console.log("Skipped invisible check on item ");
           //throw new Error("Holder: invisible placeholder")
         }
       }
@@ -635,57 +623,9 @@
     });
     Holder.run();
 
-    /**
-    * Returns a random integer between min (inclusive) and max (inclusive)
-    * Using Math.round() will give you a non-uniform distribution!
-    */
-    function getRandomInt(min, max) {
-      return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
-    var isLoadingHolder = false;
-    $(function () {
-      // jQuery('.chart-stage img').lazyload({skip_invisible:false});
-      $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-
-        Holder.run({
-          domain: $(this).attr('href').substring(1) + '.info'
-        });
-
-        if ($(this).attr('href') === '#traffic') {
-          Holder.run({
-            domain: 'usage-clients-requests.info'
-          });
-        }
-      });
-
-      $('#stat-tabs li:first-child').click();
-      $('a[data-toggle="popover"]').click(function(e) { e.preventDefault(); });
-      $('[data-toggle="popover"]').popover({
-        container: 'body',
-        placement: 'left',
-        trigger: 'focus'
-      });
-      var statuses = [
-        { icon: 'fa-thumbs-o-up', status: 'good', values: ['Up','Bueno','Good', 'Rockin', 'Cruising', 'Awesome', 'Super', 'Excellent', 'Joyful', 'Fierce'] },
-        { icon: 'fa-gamepad', status: 'maintenance', values: ['In surgery', 'Maintenance', 'Taking a breather', 'Recharging', 'Tune-up', 'Oil change', "Back in a few", 'Vacation', 'On break', 'Pensive', 'Tired'] },
-        { icon: 'fa-thumbs-o-down', status: 'down', values: ['Down', 'Borked', 'Struggling', 'Help', 'On strike', 'Asleep', 'Mid-life crisis', 'Bitter', 'Angstful', 'Sad', 'Angry'] },
-        { icon: 'fa-spin fa-spinner', status: 'deploying', values: ['Growing', 'Moving', 'Bulking up', 'Growth spurt', 'Cowboy up', 'Eating Wheaties', 'Power nap', 'Power up', 'Manning up'] }
-      ];
-      var status = statuses[getRandomInt(0,3)];
-      var status_text = status.values[getRandomInt(0, status.values.length - 1)];
-      $('#summary-status').html(status_text);
-      $('#summary-status-icon').addClass(status.icon);
-
-      status = statuses[getRandomInt(0,3)];
-      status_text = status.values[getRandomInt(0, status.values.length - 1)];
-      $('#git-buildstatus').html(status_text);
-      $('#git-buildstatus-icon').addClass(status.icon);
-
-    });
   </script>
 
-  <script src="../../assets/agave.js"></script>
+  <script src="js/agave.js"></script>
 
 </body>
 </html>

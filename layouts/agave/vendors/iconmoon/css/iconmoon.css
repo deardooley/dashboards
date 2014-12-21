@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?-xrnesi');
-	src:url('../fonts/icomoon.eot?#iefix-xrnesi') format('embedded-opentype'),
-	url('../fonts/icomoon.woff?-xrnesi') format('woff'),
-	url('../fonts/icomoon.ttf?-xrnesi') format('truetype'),
-	url('../fonts/icomoon.svg?-xrnesi#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?v8vkzi');
+	src:url('../fonts/icomoon.eot?#iefixv8vkzi') format('embedded-opentype'),
+	url('../fonts/icomoon.woff?v8vkzi') format('woff'),
+	url('../fonts/icomoon.ttf?v8vkzi') format('truetype'),
+	url('../fonts/icomoon.svg?v8vkzi#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -32,6 +32,13 @@
 }
 .im-job:before {
 	content: "\e602";
+}
+.im-hardhat:before {
+	content: "\e603";
+}
+.im-hardhat2:before {
+	content: "\e604";
+	font-size: 1.2em;
 }
 .im-docker:before {
 	content: "\f100";

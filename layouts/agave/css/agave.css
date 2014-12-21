@@ -1,6 +1,6 @@
 body.application {
   padding:0;
-  background: #FFF;
+  background: #f2f2f2;
   font: 14px/1.5 Arial, 'Liberation Sans', FreeSans, sans-serif;
   color: #656565;
 }
@@ -12,38 +12,56 @@ a {
 a[data-toggle="popover"] {
   float: right;
 }
+h1 {
+  font-size: 4em;
+  color: #656565;
+  margin-top: 0;
+}
 body.application > .container-fluid.wrapper {
   padding: 40px 20px 0;
   border-top: 8px solid #ddd;
 }
 .chart-wrapper {
-  border-color: #656565;
+  border: none;
   border-radius: 0 0;
   -webkit-border-radius: 0 0;
   -moz-border-radius: 0 0;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 .chart-wrapper .chart-title {
-  border-bottom-color: #656565;
+  border: none;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 700;
   color: #656565;
+  padding: 10px;
+  text-align: center;
+  padding: 10px 0px;
+  text-transform: uppercase;
 }
-.chart-title, .chart-title a {
+.chart-title a {
   color: #656565;
-  text-decoration: none;
+  background: #DDD;
+  padding: 7px 12px;
+  vertical-align: top;
+  margin: -10px 0px 0 0;
+  outline: none;
+  font-weight: normal;
 }
 
 .chart-title a:hover {
-  color:#04a5B7;
+  color:#656565;
 }
 .panel.badge {
   background: #FFF;
   color:#656565;
   width: 100%;
-  border-color: #656565;
+  border: none;
   border-radius: 0 0;
   -webkit-border-radius: 0 0;
   -moz-border-radius: 0 0;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 .panel.badge:hover {
   background: #33485c;
@@ -102,8 +120,9 @@ body.application > .container-fluid.wrapper {
   margin-right: 35px;
 }
 #main-navigation li.current-menu-item a,
-#main-navigation li.current-menu-item a:hover {
-  color: #f9f9f9;
+#main-navigation li.current-menu-item a:hover,
+#main-navigation li a:hover {
+  color: #04a5B7;
 }
 #main-navigation li a {
   text-decoration: none;
